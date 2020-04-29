@@ -11,8 +11,14 @@ module.exports= app =>{
     );
     
     //route handler to process user input
-    app.get('/auth/google/callback', 
-        passport.authenticate('google'));
+    app.get(
+        '/auth/google/callback', 
+        passport.authenticate('google'),
+        //redirecting users after they are logged in
+        (req,res )=>{
+            res.redirect('/home');
+        }
+     ); 
 
     app.get('/api/logout',(req,res)=>{
         req.logout();

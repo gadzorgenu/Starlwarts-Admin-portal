@@ -18,6 +18,9 @@
     "passport-google-oauth20": "^2.0.0"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+
   }
 }
