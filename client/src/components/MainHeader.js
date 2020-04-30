@@ -1,8 +1,15 @@
 import React, {Component} from 'react';
 import {connect } from 'react-redux';
+import M from  'materialize-css/dist/js/materialize.min.js';
 import './Header.css' ;
 
 class MainHeader extends Component{
+    
+    componentDidMount() {
+        let sidenav = document.querySelector('#slide-out');
+        M.Sidenav.init(sidenav, {});
+      }      
+    
     renderContent(){
         switch(this.props.auth){
             case null:
@@ -13,37 +20,52 @@ class MainHeader extends Component{
             return <li><a href="/api/logout"> Logout</a></li>
         }
     }
+    
 
     render(){
         return(
             <div>
                   <nav>
-                    <div class="nav-wrapper">
+                      
+                    <div className="container">
+                    <a href="#" data-target="slide-out" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
                         <a className="left brand-logo">
-                            <img className="image" src="../../images/Stalwart-logo-1.png"/>
-                        </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul className="right">
-                       {this.renderContent()}
-                    </ul>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="notifications.html">Notifications</a></li>
-                        <li><a href="customers.html">Customers</a></li>
-                        <li><a href="order.html">Order</a></li>
-                        <li><a href="history.html">History</a></li>
+                            <img className="image" src="../../images/Stalwart-logo-1.png"/>                     
+                        </a>               
+                    <ul id="nav-mobile" className="right hide-on-med-and-down">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/notifications">Notifications</a></li>
+                        <li><a href="/customers">Customers</a></li>
+                        <li><a href="/orders">Order</a></li>
+                        <li><a href="/history">History</a></li>
+                        <li><a href="/api/logout">
+                           {this.renderContent()}
+                         </a></li>
                     </ul>
                     
                     </div>                
                 </nav>
-                <ul class="sidenav" id="mobile-demo">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="notifications.html">Notifications</a></li>
-                    <li><a href="customers.html">Customers</a></li>
-                    <li><a href="order.html">Order</a></li>
-                    <li><a href="history.html">History</a></li>
-                </ul>
-                
+                    <ul id="slide-out" className="sidenav">
+                        <li>
+                            <a href="/home">
+                                <i className="material-icons">home</i>Home
+                            </a></li>
+                        <li><a href="/notifications">
+                                <i className="material-icons">notifications</i>Notifications
+                            </a></li>
+                        <li><a href="/customers">
+                                <i className="material-icons">person</i>Customers
+                            </a></li>
+                        <li><a href="/orders">
+                                 <i className="material-icons">assignment</i>Orders
+                            </a></li>
+                        <li><a href="/history">
+                                <i className="material-icons">history</i>History
+                            </a></li>
+                        <li><a href="/api/logout">
+                            <i className="material-icons"> person_outline</i>{this.renderContent()}
+                         </a></li>
+                    </ul>
             </div>
         )
     }

@@ -1,7 +1,26 @@
 body{
-    width: 100%;
-    height: 100%;
+    position: fixed;
 }
+
+.sidenav-trigger{
+    color: #000;
+}
+nav .nav-wrapper{
+    width: 100%;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+.header{
+    margin-left:5% ;
+}
+.btn{
+    background-color: #5353df;
+    margin-left: 5%;
+}
+
 nav{
     background-color: #e2e2ee;
     width: 100%;
@@ -9,20 +28,145 @@ nav{
     height: 56px;
 
 }
+a{
+    list-style: none;
+}
+nav a{
+    color: #000;
+}
 nav ul a{
     color: #000;
 }
 
 .container {
     margin: 0 ; 
-    width: 120%;
+    width: 200%;
+
 }
 
+
 .image{
-    padding-left: 25%;
+    padding-left: 30%;
 
 }
 .linker{
     color: #000;
     font-size: 17px;
+}
+
+.product_name,.total_price{
+    font-size: 23px;
+}
+.card .card-content{
+    padding: 7px;
+}
+.card-cont{
+    margin-top: 4%;
+}
+.product_name{
+    margin: 1% ;
+    font-size: 23px;
+}
+.product_info{
+    margin-left: 3%;
+}
+.product_status{
+    color: #90ee90;
+}
+
+.total_price, .price{
+    float: right
+}
+
+.cus_header{
+    font-size: 30px;
+}
+
+.segments,.latest_purchase,.Balance,.quantity,.last_seen,.customer_name{
+    margin-left: 2%;
+}
+
+
+
+
+
+@media  (max-width: 320px){
+    .image{
+        padding-left: 20%;
+    }
+    .products{
+        width: 117%;
+    }
+    .pending_orders{
+        width: 140%;
+    }
+    .product_name{
+        font-size: 11px;
+    }
+    .date,.time, .price, .product_status{
+        font-size: 9px;
+    }
+    .header{
+        margin: 2%;
+    }
+
+}
+
+@media  (max-width: 411px){
+    .header{
+        margin-left: 5%;
+    }
+    .card-holder{
+        margin: 2%;
+    }
+    .card-cont{
+        margin-top: 3%;
+    }
+    .one,.two{
+        margin: 3%;
+    }
+    .one{
+        margin-left: 25%;
+        width: 120%;
+       
+    }
+    .two{
+        margin-left: 60%;
+        width: 105%;
+    }
+    .total_orders,.total_cus{
+        font-size: 15px;
+        margin: 1%;
+    }
+    .pendingOrders{
+        margin: 2%;
+    }
+    .pending_orders{
+        width: 130%;
+    }
+    .product_name, .total_price{
+        font-size: 15px;
+    }
+    .customer_name{
+        font-size: 13px;
+    }
+    .products{
+        width: 100%;
+    }
+    .date,.time, .price, .product_status{
+        font-size: 13px;
+    }
+    
+
+}
+
+
+@media  (max-width: 320px){
+    .pending_orders{
+        width: 120%;
+    }
+    .products{
+        width: 100%;
+    }
+
 }

@@ -20,7 +20,11 @@ module.exports= app =>{
 
     app.get('/api/logout',(req,res)=>{
         req.logout();
-        res.render ('/');
+        res.redirect ('/');
+    });
+
+    app.get('/api/logo',(req,res)=>{
+        res.redirect ('/customers');
     });
     
 

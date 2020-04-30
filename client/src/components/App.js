@@ -4,14 +4,13 @@ import {BrowserRouter, Route } from 'react-router-dom';
 import {connect } from 'react-redux';
 import * as actions from '../actions';
 
-import Header from './LoginHeader';
 import  Dashboard from './Dashboard';
 import LandingPage from './LandingPage';
-const Notifications = () => <h2>Notifications</h2>
-const Customers = () => <h2>Customers</h2>
-const customerInfo = () => <h2>customerInfo</h2>
-const Orders = () => <h2>Orders</h2>
-const History = () => <h2>History</h2>
+import Notification from './Notifications';
+import Order from './Order';
+import History from './History';
+import Customers from './Customers';
+import Customer_info from './Customer_info';
 
 class App extends Component{
     componentDidMount(){
@@ -24,11 +23,11 @@ class App extends Component{
                     <div>
                         
                         <Route exact path="/" component ={LandingPage}/>
-                        <Route exact path="/home" component={Dashboard}/>
-                        <Route path="/home/notification" component={Notifications}/>
-                        <Route exact path="/home/customers" component={Customers}/>
-                        <Route path="/home/customers/customer_info" component={customerInfo}/>
-                        <Route path="/orders" component={Orders}/>
+                        <Route path="/home" component={Dashboard}/>
+                        <Route path="/notifications" component={Notification}/>
+                        <Route exact path="/customers" component={Customers}/>
+                        <Route path="/customers/customer_info" component={Customer_info}/>
+                        <Route path="/orders" component={Order}/>
                         <Route path="/history" component={History}/>
                     </div>
                 </BrowserRouter>
