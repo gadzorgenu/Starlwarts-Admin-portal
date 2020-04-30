@@ -4,9 +4,9 @@ import {BrowserRouter, Route } from 'react-router-dom';
 import {connect } from 'react-redux';
 import * as actions from '../actions';
 
-import Header from './Header';
-const Dashboard = () => <h2>Dashboard</h2>
-const Landing  = () => <h2>Landing</h2>
+import Header from './LoginHeader';
+import  Dashboard from './Dashboard';
+import LandingPage from './LandingPage';
 const Notifications = () => <h2>Notifications</h2>
 const Customers = () => <h2>Customers</h2>
 const customerInfo = () => <h2>customerInfo</h2>
@@ -22,8 +22,8 @@ class App extends Component{
             <div className="container">
                 <BrowserRouter>
                     <div>
-                        <Header />
-                        <Route exact path="/" component ={Landing}/>
+                        
+                        <Route exact path="/" component ={LandingPage}/>
                         <Route exact path="/home" component={Dashboard}/>
                         <Route path="/home/notification" component={Notifications}/>
                         <Route exact path="/home/customers" component={Customers}/>

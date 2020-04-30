@@ -11,19 +11,18 @@ module.exports= app =>{
     );
     
     //route handler to process user input
-    app.get(
-        '/auth/google/callback', 
+    app.get('/auth/google/callback', 
         passport.authenticate('google'),
-        //redirecting users after they are logged in
-        (req,res )=>{
-            res.redirect('/home');
+        (req,res)=>{
+            res.redirect('/home')
         }
-     ); 
+        );
 
     app.get('/api/logout',(req,res)=>{
         req.logout();
-        res.send(req.user);
+        res.render ('/');
     });
+    
 
     app.get('/api/current_user',(req,res)=>{
         //getting access to the user

@@ -10,12 +10,13 @@ class Header extends Component{
             case false: 
             return <li><a href="/auth/google">Login with Google</a></li>;
             default: 
-            return <li><a> Logout</a></li>
+            return <li><a href="/api/logout"> Logout</a></li>
         }
     }
     render(){
         return(
-            <nav>
+            <div className="navbar-fixed">
+            <nav >
                 <div className="nav-wrapper">
                     <a className="left brand-logo">
                         <img className="image" src="../../images/Stalwart-logo-1.png"/>
@@ -25,6 +26,7 @@ class Header extends Component{
                     </ul>
                 </div>
             </nav>
+            </div>
         )
     }
 }

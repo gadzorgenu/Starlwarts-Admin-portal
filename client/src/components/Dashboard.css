@@ -1,0 +1,38 @@
+body{
+    position: fixed;
+}
+
+.card-container{
+    margin: 20px 20px;
+}
+
+.row {
+     width: 100%;
+     margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.col-5{
+    width: 41.66%;
+    
+}
+
+.box{
+    width: 70%;
+    height: 70%;
+    margin: 0;
+    background-color: #fafafa !important;
+
+}
+.card-content {  
+    margin: 5px 5px;
+}
+
+
+
+
+.white-text {
+    color: #000 !important;
+}
