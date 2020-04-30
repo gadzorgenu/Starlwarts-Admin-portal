@@ -2,9 +2,10 @@ body{
     position: fixed;
 }
 
-.card-container{
-    margin: 20px 20px;
+.card{
+    margin: 18px 18px;
 }
+
 
 .row {
      width: 100%;
@@ -30,9 +31,7 @@ body{
     margin: 5px 5px;
 }
 
-
-
-
-.white-text {
-    color: #000 !important;
+a{
+    color:#000;
+    font-size: 30px;
 }
