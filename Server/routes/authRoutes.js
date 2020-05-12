@@ -23,9 +23,6 @@ module.exports= app =>{
         res.redirect ('/');
     });
 
-    app.get('/api/logo',(req,res)=>{
-        res.redirect ('/customers');
-    });
     
 
     app.get('/api/current_user',(req,res)=>{

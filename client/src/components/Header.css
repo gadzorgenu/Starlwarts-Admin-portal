@@ -1,5 +1,5 @@
 body{
-    position: fixed;
+  
 }
 
 .sidenav-trigger{
@@ -13,11 +13,15 @@ h2 {
     font-size: 45px;
 }
 
-.header{
-    margin-left:5% ;
+.header_cont{
+    margin-left: 10%;
 }
+
 .btn{
     background-color: #5353df;
+}
+
+.second{
     margin-left: 5%;
 }
 
@@ -40,7 +44,8 @@ nav ul a{
 
 .container {
     margin: 0 ; 
-    width: 200%;
+    width: 100%;
+    max-width: 1700px;
 
 }
 
@@ -53,6 +58,11 @@ nav ul a{
     color: #000;
     font-size: 17px;
 }
+.notif_container{
+    margin-left: 3%;
+}
+
+
 
 .product_name,.total_price{
     font-size: 23px;
@@ -64,8 +74,8 @@ nav ul a{
     margin-top: 4%;
 }
 .product_name{
-    margin: 1% ;
-    font-size: 23px;
+    /* margin-right: 7% ; */
+    font-size: 20px;
 }
 .product_info{
     margin-left: 3%;
@@ -77,19 +87,129 @@ nav ul a{
 .total_price, .price{
     float: right
 }
-
+.customer_header{
+    margin-left: 6%;
+}
 .cus_header{
     font-size: 30px;
 }
 
-.segments,.latest_purchase,.Balance,.quantity,.last_seen,.customer_name{
+.segments,.latest_purchase,.Balance,.quantity,.customer_name{
     margin-left: 2%;
+    font-size: 30px;
+   
+}
+.customer_name_{
+    font-size: 18px;
+    padding-left: 5%;
 }
 
+.objects{
+    margin: 3%;
+}
 
+.name{
+    font-style: italic;
+    padding-right: 3%;
+}
 
+.history_cont{
+    margin-left:3% ;
+}
 
+.history{
+    /* margin-left: 10%; */
+}
+.filter_card{
+    margin: 1%;
+    font-size: 18px;
+}
 
+#icon_prefix.validate{
+    width:100%
+}
+
+.filter_order{
+    font-size: 25px;
+    margin: 1%;
+    
+}
+ .filter{
+    
+    margin: 0;
+}
+.card_filter{
+    margin-top: 1%;
+}
+
+.sort {
+    margin: 0; 
+}
+
+.order_status{
+    padding-left: 50%;
+    font-size: 25px;
+}
+
+select{
+    display: block;
+    width: 17%;
+    margin: 0;
+    
+}
+
+.order{
+    padding-left: 4%;
+}
+
+.notif{
+    margin: 1%;
+    font-size: 20px;
+
+}
+
+.status, .price_, .sent{
+    padding-left: 19%;
+}
+.delivery{
+    margin-left: 0;
+}
+
+.pendingOrders{
+    padding-left: 5%;
+}
+
+.customer_info{
+    margin-left: 5%;
+}
+
+.balance{
+    margin-left: 5%;
+}
+.customer_Header{
+ margin-left: 4%;
+ font-size: 38px;
+}
+
+.customer_table{
+    margin: 4%;
+
+}
+.table{
+    max-width: 100%;
+}
+
+.product_name{
+    margin: 1%;
+}
+
+.products{
+    margin: 1%;
+}
+
+.order_table{
+    margin-top: 3%;
+}
 @media  (max-width: 320px){
     .image{
         padding-left: 20%;
@@ -169,4 +289,14 @@ nav ul a{
         width: 100%;
     }
 
+}
+
+
+@media only screen and (min-width: 601px)
+   {
+
+   .row .col.m10{
+       width: 70%;
+   } 
+    
 }

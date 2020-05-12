@@ -5,6 +5,26 @@ import MainHeader from './MainHeader';
 
 
 class Dashboard extends Component{
+    constructor(props){
+        super(props);
+       this.state = {
+            purchases: []
+        }
+
+    }
+
+    componentDidMount() {
+        fetch("http://localhost:5000/orders")
+          .then(res => res.json())
+          .then(
+            (result) => {
+              this.setState({
+                purchases: result.data
+              });
+            },
+          )
+        }
+
     render(){
         return(
             <div>
@@ -35,64 +55,27 @@ class Dashboard extends Component{
                 </div> 
                 <div className="card-holder" >       
                 <div className="row">
-                    <div className="col m9">
+                    <div className="col m10">
                         <div className="card pending_orders" >
                             <a href="/orders">                                            
                                 <div className="card-content">
-                                    <h1 className="pendingOrders">Pending orders</h1>
-                                     <p className="date">20 /03/ 2020,
-                                        <span className="time"> 16:14:45</span>
-                                    </p>
-                                    <p className="customer_name">by Mercy Dav, 
-                                        <span className="quantiy" > 3 items</span>
-                                        <span className="price"> Ghc 2,7000</span>
-                                    </p>
+                                <h1 className="pendingOrders">Pending orders</h1>
+                                { this. state.purchases.map(purchase =>( 
+                                    <div className=" objects" >                                
+                                        <p className="date">{purchase.date}
+                                            <span className="time"> {purchase.time}</span>
+                                        </p>
+                                        <p className="customer_name_">
+                                            <span className="name"> by  &nbsp;
+                                            {purchase.firstname + "  " + purchase.lastname}
+                                            </span> 
+                                            <span className="quantiy" > {purchase.quantity} items</span>
+                                            <span className="price"> {purchase.price}</span>
+                                        </p>
+                                    </div>
+                                ))}
                                 </div>
-                                <div className="card-content">
-                                     <p className="date">20 /03/ 2020,
-                                        <span className="time"> 16:14:45</span>
-                                    </p>
-                                    <p className="customer_name">by Mercy Dav, 
-                                        <span className="quantiy" > 3 items</span>
-                                        <span className="price"> Ghc 2,7000</span>
-                                    </p>
-                                </div>
-                                <div className="card-content">
-                                     <p className="date">20 /03/ 2020,
-                                        <span className="time"> 16:14:45</span>
-                                    </p>
-                                    <p className="customer_name">by Mercy Dav, 
-                                        <span className="quantiy" > 3 items</span>
-                                        <span className="price"> Ghc 2,7000</span>
-                                    </p>
-                                </div>
-                                <div className="card-content">
-                                     <p className="date">20 /03/ 2020,
-                                        <span className="time"> 16:14:45</span>
-                                    </p>
-                                    <p className="customer_name">by Mercy Dav, 
-                                        <span className="quantiy" > 3 items</span>
-                                        <span className="price"> Ghc 2,7000</span>
-                                    </p>
-                                </div>
-                                <div className="card-content">
-                                     <p className="date">20 /03/ 2020,
-                                        <span className="time"> 16:14:45</span>
-                                    </p>
-                                    <p className="customer_name">by Mercy Dav, 
-                                        <span className="quantiy" > 3 items</span>
-                                        <span className="price"> Ghc 2,7000</span>
-                                    </p>
-                                </div>
-                                <div className="card-content">
-                                     <p className="date">20 /03/ 2020,
-                                        <span className="time"> 16:14:45</span>
-                                    </p>
-                                    <p className="customer_name">by Mercy Dav, 
-                                        <span className="quantiy" > 3 items</span>
-                                        <span className="price"> Ghc 2,7000</span>
-                                    </p>
-                                </div>
+                                
                             </a> 
                         </div>
                     </div>

@@ -36,7 +36,7 @@ class MainHeader extends Component{
                         <li><a href="/home">Home</a></li>
                         <li><a href="/notifications">Notifications</a></li>
                         <li><a href="/customers">Customers</a></li>
-                        <li><a href="/orders">Order</a></li>
+                        <li><a href="/orders">Orders</a></li>
                         <li><a href="/history">History</a></li>
                         <li><a href="/api/logout">
                            {this.renderContent()}
@@ -63,7 +63,7 @@ class MainHeader extends Component{
                                 <i className="material-icons">history</i>History
                             </a></li>
                         <li><a href="/api/logout">
-                            <i className="material-icons"> person_outline</i>{this.renderContent()}
+                            <i className="material-icons"> account_circle</i>{this.renderContent()}
                          </a></li>
                     </ul>
             </div>

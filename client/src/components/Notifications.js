@@ -4,33 +4,60 @@ import './Header.css' ;
 import MainHeader from './MainHeader';
 
 class Notification extends Component{
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            purchases: []
+        }     
+    }
+
+
+
+    componentDidMount() {
+        fetch("http://localhost:5000/orders")
+          .then(res => res.json())
+          .then(
+            (result) => {
+              this.setState({
+                purchases: result.data
+              });
+            },
+          )
+        }
+
+
     render(){
         return(
             <div>
                 <MainHeader/>
-                <div>
+                <div className="notif_container">
+                    <div className="header_cont">
                     <h2 className="header">Notifications</h2>
-                    <div className="buttons">
-                        <a class="waves-effect waves-light btn">Send Message</a>
-                        <a class="waves-effect waves-light btn">Send Email</a>
+                        <div className="buttons">
+                            <a class="waves-effect waves-light btn ">Send Message</a>
+                            <a class="waves-effect waves-light btn second">Send Email</a>
+                        </div>
                     </div>
                     <div className="card-cont" >       
                         <div className="row">
-                            <div className="col m10">
+                            { this.state.purchases.map(purchase =>(
+                            <div className="col m11">
                                 <div className="card products" >                                                                               
                                     <div className="card-content">
-                                        <h1 className="product_name"> SAMSUNG A30, SPLIT - INVERTER AC 
-                                             <span className="total_price">Total Price</span>
+                                        <h1 className="product_name">{purchase.product_name}
+                                            <span className="total_price">Total price </span>
                                         </h1>
                                         <div className="product_info">
-                                            <span><a className ="product_status" href="/order">pending</a></span>
-                                            <span className="date"> 23/01/2020</span>
-                                            <span className="time">16:20:24 pm</span>
-                                            <span className="price">GHc4,5000</span> 
+                                            <span><a className ="product_status" href="/order">{purchase.product_status}</a></span>
+                                            <span className="date"> { purchase.date}</span>
+                                            <span className="time">{purchase.time}</span>
+                                            <span className="price"> {purchase.price}</span> 
                                         </div>                                                                                             
                                     </div>
                                 </div>
                             </div>
+                            ))}
                         </div> 
                     </div> 
                 </div>             

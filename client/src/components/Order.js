@@ -8,6 +8,17 @@ class Order extends Component{
         return(
            <div>
                <MainHeader/>
+               <div>
+                   <h2 className="order">Orders
+                       <span className="order_status"> status :</span>
+                   </h2>   
+                   <div >
+                        <span className=""> Date </span>
+                        <span> Customers </span>
+                        <span> Product </span>
+                        <span> Status </span>
+                   </div>
+               </div>
            </div>
          )
     }
