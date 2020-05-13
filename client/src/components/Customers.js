@@ -9,7 +9,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
-import TablePagination from '@material-ui/core/TablePagination';
+
 import TableRow from '@material-ui/core/TableRow';
 
 
@@ -24,7 +24,7 @@ class Customers extends Component{
             page:1,
             startResults:0,
             endResults:0,
-            purchases:[],
+          
         };
 
         // this.handleChangePage = this.handleChangePage.bind(this);
@@ -92,42 +92,22 @@ class Customers extends Component{
               this.getPageResults();
             },
           )
-
-            fetch("http://localhost:5000/orders")
-              .then(res => res.json())
-              .then(
-                (result) => {
-                  this.setState({
-                    purchases: result.data
-                  });
-                },
-              )
-            
-            };
+        }
        
     render(){
-
-        // const [page, setPage] = React.useState(0);
-        // const [rowsPerPage, setRowsPerPage] =React.useState(10);
-
-        // const handleChangePage = (event, newPage)=> {
-        //   setPage(newPage);
-        // };
-      
-        // const handleChangeRowsPerPage = (event) => {
-        //   setRowsPerPage(+event.target.value);
-        //   setPage(0);
-        // };
-
         
         return(
            <div>
                <MainHeader/>
                 <h1 className="customer_Header">Customers</h1>
-                <div className="customer_table">
-                  <button className="btn" onClick={this.getPreviousPageItems.bind(this)}>Previous</button>
-                  <button className="btn" onClick={this.getNextPageItems.bind(this)}>Next</button>
-                  <span>Page {this.state.page} Results {this.state.startIndex} - {this.state.endIndex} </span>
+                <div className="customer_table">               
+                  <button className="arrows" onClick={this.getNextPageItems.bind(this)}>
+                      <i className="material-icons ">chevron_right</i>
+                    </button>
+                  <button className="arrows" onClick={this.getPreviousPageItems.bind(this)}>
+                      <i className="material-icons">chevron_left</i>                
+                  </button>              
+                  <span className="page">Page {this.state.page} Results {this.state.startIndex} - {this.state.endIndex} </span>
                     <TableContainer component={Paper}>
                     <Table className="table" aria-label="caption table">
                         <TableHead>
@@ -138,27 +118,13 @@ class Customers extends Component{
                             <TableCell align="right">Segment</TableCell>
                         </TableRow>
                         </TableHead>
-                        {
-                            // <TablePagination
-                            //     rowsPerPageOptions={[10, 25, 100]}
-                            //     component="div"
-                            //     count={customers.length}
-                            //     PerPage={rowsPerPage}
-                            //     page={page}
-                            //     onChangePage={handleChangePage}
-                            //     onChangeRowsPerPage={handleChangeRowsPerPage}
-                            // />
-                        }
                         <TableBody>
                         {this.state.currentCustomersInfo.map((customer) => (
                             <TableRow key={customer._id}>
                             <TableCell component="th" scope="row">
                                 <a className ="product_status" href="/order">{customer.firstname + "  " + customer.lastname}</a>
                             </TableCell>
-                            <TableCell >{customer.balance}</TableCell>
-                            {/* {this.state.purchases.map((purchase) => (
-                            <TableCell align="right">{purchase.date}</TableCell>
-                            ))} */}
+                            <TableCell >{customer.date}</TableCell>
                             <TableCell align="right">{customer.balance}</TableCell>
                             <TableCell align="right">{customer.segment}</TableCell>
                             

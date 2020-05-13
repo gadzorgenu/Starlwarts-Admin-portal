@@ -106,7 +106,7 @@ class History extends Component{
                         {this.state.purchases.map((purchase) => (
                             <TableRow key={purchase.productID}>
 
-                            <TableCell >{purchase.productId}</TableCell>
+                            <TableCell >{purchase.product_name}</TableCell>
                             <TableCell >{ purchase.product_status}</TableCell>
                             <TableCell >{purchase.price}</TableCell>
                             <TableCell >{purchase.date}</TableCell>                 

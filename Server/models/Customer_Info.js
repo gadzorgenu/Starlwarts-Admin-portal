@@ -27,6 +27,9 @@ const customerSchema = mongoose.Schema({
     segment: {
         type: String,
     },
+    purchaseId:{
+        type: String,
+    }
     
 
 });

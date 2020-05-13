@@ -1,6 +1,4 @@
-body{
-  
-}
+
 
 .sidenav-trigger{
     color: #000;
@@ -99,6 +97,16 @@ nav ul a{
     font-size: 30px;
    
 }
+.arrows{
+    float: right;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+.page{
+    float: right;
+    margin: 1%;
+}
+
 .customer_name_{
     font-size: 18px;
     padding-left: 5%;
@@ -117,9 +125,7 @@ nav ul a{
     margin-left:3% ;
 }
 
-.history{
-    /* margin-left: 10%; */
-}
+
 .filter_card{
     margin: 1%;
     font-size: 18px;

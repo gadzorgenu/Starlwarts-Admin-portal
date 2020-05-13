@@ -21,21 +21,6 @@ router.get('/', (req, res, next) => {
             res.status(500).json({ message: error.message });
         });
 
-
-
-    // productOp.getOrdersWithProductInfo()
-    // .then(purchases=>{
-    //     if(!purchases || purchases.length == 0) {
-    //         res.status(404).json({ message: 'Not results!!' });
-    //     }
-
-    //     //render results
-    //     res.json({status: true, data: purchases});        
-    // })
-    // .catch(error=>{
-    //     console.log("error")
-    //     // res.status(500).json({ message: error.message });
-    // });
 });
 
 router.get('/:name', search, (req, res, next) => {

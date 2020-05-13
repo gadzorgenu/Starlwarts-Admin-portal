@@ -1,22 +1,25 @@
 const express = require('express');
 const router = express.Router();
 const Customer = require('../models/Customer_Info');
-
+const PurchaseOperations= require("../classes/PurchaseOperations");
 
 router.get('/',(req, res, next) => {
-    //find all   
-    //console.log("getting");
-    Customer.find()
-        .then(customers=>{
-            if(customers == null) {
-                res.status(404).json({ message: 'Not results!!' });
-            }                    
 
-            res.json({status: true, data:customers});                
-        })
-        .catch(err=>{
-            res.status(500).json({ message: err.message });
-        });  
+    let productOp = new PurchaseOperations();
+
+    //find all   
+    productOp.getCustomersWithPurchaseInfo ()
+    .then(customers=>{
+        if(!customers || customers.length == 0) {
+            res.status(404).json({ message: 'Not results!!' });
+        }
+
+        //render results
+        res.json({status: true, data: customers});        
+    })
+    .catch(error=>{
+        res.status(500).json({ message: error.message });
+    });  
 });
 
 
@@ -31,6 +34,7 @@ router.post('/', (req, res) => {
         email: req.body.email,
         balance: req.body.balance,
         segment: req.body.segment,
+        purchaseId: req.body.purchaseId,
     });
 
     try {
@@ -47,4 +51,4 @@ router.post('/', (req, res) => {
 
 
 
-module.exports = router;
+module.exports = router; 
