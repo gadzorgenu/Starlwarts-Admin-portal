@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import {connect } from 'react-redux';
 import './Header.css' ;
 import MainHeader from './MainHeader';
-import { makeStyles } from '@material-ui/core/styles';
+
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
-import TablePagination from '@material-ui/core/TablePagination';
+
 import TableRow from '@material-ui/core/TableRow';
 
 
@@ -90,33 +90,37 @@ class History extends Component{
                         </select>                                        
                     </div> 
                     </div>
-                    <div className="order_table">
-                    <TableContainer component={Paper}>
-                    <Table className="table" aria-label="caption table">
-                        <TableHead>
-                        <TableRow>
-                            <TableCell> Products</TableCell>
-                            <TableCell >Status</TableCell>
-                            <TableCell >Price</TableCell>
-                            <TableCell >Date</TableCell>
-                            <TableCell >Time</TableCell>
-                        </TableRow>
-                        </TableHead>
-                        <TableBody>
-                        {this.state.purchases.map((purchase) => (
-                            <TableRow key={purchase.productID}>
+                    <div className="card-history" >       
+                        <div className="row">
+                            <div className="order_table">
+                            <TableContainer component={Paper}>
+                            <Table className="table" aria-label="caption table">
+                                <TableHead>
+                                <TableRow>
+                                    <TableCell> Products</TableCell>
+                                    <TableCell >Status</TableCell>
+                                    <TableCell >Price</TableCell>
+                                    <TableCell >Date</TableCell>
+                                    <TableCell >Time</TableCell>
+                                </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                {this.state.purchases.map((purchase) => (
+                                    <TableRow key={purchase.productID}>
 
-                            <TableCell >{purchase.product_name}</TableCell>
-                            <TableCell >{ purchase.product_status}</TableCell>
-                            <TableCell >{purchase.price}</TableCell>
-                            <TableCell >{purchase.date}</TableCell>                 
-                            <TableCell >{purchase.time}</TableCell>
-                            
-                            </TableRow>
-                        ))}
-                        </TableBody>
-                    </Table>
-                    </TableContainer>
+                                    <TableCell >{purchase.product_name}</TableCell>
+                                    <TableCell >{ purchase.product_status}</TableCell>
+                                    <TableCell >{purchase.price}</TableCell>
+                                    <TableCell >{purchase.date}</TableCell>                 
+                                    <TableCell >{purchase.time}</TableCell>
+                                    
+                                    </TableRow>
+                                ))}
+                                </TableBody>
+                            </Table>
+                            </TableContainer>
+                            </div>
+                        </div>
                     </div>
                </div>
             </div> 
