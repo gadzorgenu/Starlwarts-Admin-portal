@@ -9,7 +9,7 @@ class Dashboard extends Component{
         super(props);
        this.state = {
             purchases: [],
-            currentCustomersInfo:[],
+            purchaseInfo:[],
             page:1,
             startResults:0,
             endResults:0,
@@ -19,7 +19,7 @@ class Dashboard extends Component{
 
      //set the current page info
      getPageResults(){
-        //get current page, start and end page for array copy
+        //get current page, start and end index
         let page = this.state.page;
         let startIndex = (page -1) * 10;
         let endIndex = startIndex + 10; 
@@ -32,13 +32,10 @@ class Dashboard extends Component{
         this.setState({endIndex:endIndex});
   
         //shallow copy array fields to new variable
-        let currentPageInfo = this.state.purchases.slice(startIndex,endIndex);
+        let purchaseInfo = this.state.purchases.slice(startIndex,endIndex);
   
-        // console.log(`FUll page results =>${this.state.customers.length}`);
-        // console.log(`Current Page=> ${page}, start index=> ${startIndex} , end Index =>${endIndex}`);
-  
-        //update current page info
-        this.setState({currentCustomersInfo:currentPageInfo});
+        //current page info
+        this.setState({purchaseInfo:purchaseInfo});
       }
 
 
@@ -90,7 +87,7 @@ class Dashboard extends Component{
                             <a href="/orders">                                            
                                 <div className="card-content">
                                 <h1 className="pendingOrders">Pending orders</h1>
-                                {this.state.currentCustomersInfo.map((purchase) => (
+                                {this.state.purchaseInfo.map((purchase) => (
                                     <div className=" objects" >                                
                                         <p className="date">{purchase.date}
                                             <span className="time"> {purchase.time}</span>

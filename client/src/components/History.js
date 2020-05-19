@@ -66,30 +66,33 @@ class History extends Component{
                 <MainHeader/>
                 <div className="history_cont">            
                 <div className="row">
-                    <form className="col s12">   
-                        <h3 className="history">History</h3>                  
-                        <div className="input-field col s4">                      
-                            <i className="material-icons prefix">search </i>
-                            <input onChange={this.updateInput}  id="icon_prefix" type="text" className="validate" placeholder="Search"></input>                          
-                            <div className="buttons" onClick={this.handleSearch}>
-                                <a className="waves-effect waves-light btn second">search</a>
-                            </div>
-                        </div>
-                     </form>
-                </div>
-                <h2 className="filter_order">Filter orders by :</h2>             
-                <div className="row">
-                    <label> Show:  </label>
-                    <div className="input-field col s12 sort">                                         
-                        <select>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Most recent</option>
-                            <option value="1">last month</option>
-                            <option value="2">Earlier this year</option>
-                            <option value="3">Last year</option>
-                        </select>                                        
-                    </div> 
+                    <div className="col m4">   
+                        <h3 className="history">History</h3>
+                    </div>                    
+                    <div className="col m4">                              
+                        <input onChange={this.updateInput}  id="icon_prefix" type="text" className="validate" ></input>
                     </div>
+                    <div className="col m3 searchbtn">
+                        <button onClick={this.handleSearch} className="btn">
+                            <i className="material-icons prefix">search </i>
+                        </button>
+                    </div>                                 
+                </div>
+                <h2 className="filter_order">Filter orders by :</h2>      
+                <div className="row">
+                    <div className="sortOptions">
+                        <label> Show:  </label>
+                        <div className="input-field col s12 sort">                                         
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Most recent</option>
+                                <option value="1">last month</option>
+                                <option value="2">Earlier this year</option>
+                                <option value="3">Last year</option>
+                            </select>                                                          
+                        </div> 
+                    </div>               
+                </div>
                     <div className="card-history" >       
                         <div className="row">
                             <div className="order_table">

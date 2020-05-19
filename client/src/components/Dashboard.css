@@ -75,14 +75,41 @@ li{
 .date,.time,.customer_name,.quantity{
     padding-left: 3%;
 }
+.address , .email{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.customer_information{
+  background-color: #f5f5f5;
+}
 
+.first{
+    margin-top: 8%;
+    margin-bottom: 0;
+}
 
 .price{
     float: right;
 }
 
-input.firstname{
-    width: 25%;
+input.firstname, input.lastname {
+    width: 80%; 
+}
+
+input#standard-read-only-input.MuiInputBase-input.MuiInput-input{
+    border-bottom:0;
+
+}
+.col{
+    margin-top: 5%;
+}
+
+.history{
+    margin: 0;
+}
+
+.order_table{
+    margin: 1.5%;
 }
 
 @media  (max-width: 360px){

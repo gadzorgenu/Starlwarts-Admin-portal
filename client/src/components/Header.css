@@ -141,11 +141,14 @@ nav ul a{
 
 .filter_order{
     font-size: 25px;
-    margin: 1%;
+    margin: 3%;
+    margin-left: 7%;
     
 }
- .filter{
-    
+.sortOptions{
+    margin-left: 7%;
+}
+ .filter{  
     margin: 0;
 }
 .card_filter{
@@ -208,11 +211,16 @@ select{
 .table{
     max-width: 100%;
 }
-
+.validate{
+    padding-left: 3%;
+}
 .product_name{
     margin: 1%;
 }
 
+col.m3.searchbtn{
+    margin-top: 2%;
+}
 .products{
     margin: 1%;
 }
