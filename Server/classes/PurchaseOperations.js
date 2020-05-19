@@ -9,12 +9,21 @@ class PurchaseOperations{
 
     /**
      * Get all customers with purchase date
+     * @param {string} customerID - defaults to null
      * @returns Promise
      */
-    getCustomersWithPurchaseInfo()
+    getCustomersWithPurchaseInfo(customerID=null)
     {
+        //default query
+        let dbQuery = {};
+
+        //retrieve only a customer if id is provided
+        if(customerID){
+            dbQuery["_id"] = customerID;
+        }
+
         //find all customer records
-        return Customer.find({},{},{lean:true})
+        return Customer.find(dbQuery,{},{lean:true})
             .then((results)=>
             {
                 let bulkPromise = [];

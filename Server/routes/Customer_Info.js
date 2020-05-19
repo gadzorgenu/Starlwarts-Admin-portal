@@ -5,10 +5,13 @@ const PurchaseOperations= require("../classes/PurchaseOperations");
 
 router.get('/',(req, res, next) => {
 
+    //retrieve query params
+    let id = (req.query && req.query.id) ? req.query.id : null;
+
     let productOp = new PurchaseOperations();
 
     //find all   
-    productOp.getCustomersWithPurchaseInfo ()
+    productOp.getCustomersWithPurchaseInfo (id)
     .then(customers=>{
         if(!customers || customers.length == 0) {
             res.status(404).json({ message: 'Not results!!' });
