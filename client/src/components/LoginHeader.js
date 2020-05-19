@@ -9,8 +9,8 @@ class Header extends Component{
             <div className="navbar-fixed">
             <nav className ="landing" >
                 <div className="nav-wrapper">
-                    <a className="left brand-logo">
-                        <img className="image" src="../../images/Stalwart-logo-1.png"/>
+                    <a href=" " className="left brand-logo">
+                        <img className="image" alt="something" src="../../images/Stalwart-logo-1.png"/>
                     </a>                  
                 </div>
             </nav>

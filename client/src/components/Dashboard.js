@@ -55,13 +55,13 @@ class Dashboard extends Component{
     render(){
         return(
             <div>
-                <MainHeader/>
+                {/* <MainHeader/> */}
                 <div className="card-cont" > 
                     <div className="row">
                         <div className="col m5">
                             <div className="card one" >
                                 <a href="/customers">
-                                     <div className="card-content">
+                                    <div className="card-content">
                                         <h1 className="total_cus">Total customers</h1>
                                         <p>300</p>
                                     </div>
@@ -79,35 +79,35 @@ class Dashboard extends Component{
                             </div>
                         </div>
                     </div> 
-                </div> 
+                </div>
                 <div className="card-holder" >       
-                <div className="row">
-                    <div className="col m10">
-                        <div className="card pending_orders" >
-                            <a href="/orders">                                            
-                                <div className="card-content">
-                                <h1 className="pendingOrders">Pending orders</h1>
-                                {this.state.purchaseInfo.map((purchase) => (
-                                    <div className=" objects" >                                
-                                        <p className="date">{purchase.date}
-                                            <span className="time"> {purchase.time}</span>
-                                        </p>
-                                        <p className="customer_name_">
-                                            <span className="name"> by  &nbsp;
-                                            {purchase.firstname + "  " + purchase.lastname}
-                                            </span> 
-                                            <span className="quantiy" > {purchase.quantity} items</span>
-                                            <span className="price"> {purchase.price}</span>
-                                        </p>
+                    <div className="row">
+                        <div className="col m10">
+                            <div className="card pending_orders" >
+                                <a href="/orders">                                            
+                                    <div className="card-content">
+                                    <h1 className="pendingOrders">Pending orders</h1>
+                                    {this.state.purchaseInfo.map((purchase) => (
+                                        <div className=" objects" key={purchase._id}>                                
+                                            <p className="date">{purchase.date}
+                                                <span className="time"> {purchase.time}</span>
+                                            </p>
+                                            <p className="customer_name_">
+                                                <span className="name"> by  &nbsp;
+                                                {purchase.firstname + "  " + purchase.lastname}
+                                                </span> 
+                                                <span className="quantiy" > {purchase.quantity} items</span>
+                                                <span className="price"> {purchase.price}</span>
+                                            </p>
+                                        </div>
+                                    ))}
                                     </div>
-                                ))}
-                                </div>
-                                
-                            </a> 
+                                    
+                                </a> 
+                            </div>
                         </div>
-                    </div>
-                   </div> 
-                </div>          
+                    </div> 
+                </div>                          
             </div>
         )
     }

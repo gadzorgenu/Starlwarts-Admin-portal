@@ -122,7 +122,9 @@ class Customers extends Component{
                         {this.state.currentCustomersInfo.map((customer) => (
                             <TableRow key={customer._id}>
                             <TableCell component="th" scope="row">
-                                <a className ="product_status" href="/customers/customer_info">{customer.firstname + "  " + customer.lastname}</a>
+                                <a className ="product_status" href={"/customers/customer_info/" + customer._id}>
+                                  {customer.firstname + "  " + customer.lastname}
+                                </a>
                             </TableCell>
                             <TableCell >{customer.date}</TableCell>
                             <TableCell align="right">{customer.balance}</TableCell>

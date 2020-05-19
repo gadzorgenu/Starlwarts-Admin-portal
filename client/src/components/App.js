@@ -26,7 +26,7 @@ class App extends Component{
                         <Route path="/home" component={Dashboard}/>
                         <Route path="/notifications" component={Notification}/>
                         <Route exact path="/customers" component={Customers}/>
-                        <Route path="/customers/customer_info" component={Customer_info}/>
+                        <Route path="/customers/customer_info/:id" component={Customer_info}/>
                         <Route path="/orders" component={Order}/>
                         <Route path="/history" component={History}/>
                     </div>

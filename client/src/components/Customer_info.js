@@ -10,13 +10,15 @@ class Customer_info extends Component{
         super(props)
 
         this.state = {
+            customerID: props.match.params ? props.match.params.id : "",
             customers:[],
           
         };
     }
 
     componentDidMount() {
-        fetch("http://localhost:5000/customers")
+        //retrieve specific user information
+        fetch("http://localhost:5000/customers?id="+this.state.customerID)
           .then(res => res.json())
           .then(
             (result) => {
@@ -36,7 +38,7 @@ class Customer_info extends Component{
                <MainHeader/>
                {this.state.customers.map((customer) => (
                 <div className="cus_info" > 
-                    <div className="row">
+                    <div className="row customerName">
                         <div className="col m5 ">              
                                 <TextField
                                     className="firstname"
