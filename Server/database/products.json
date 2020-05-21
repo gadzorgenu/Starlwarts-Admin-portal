@@ -1,0 +1,50 @@
+{"_id":{"$oid":"5eb43df2ed4ab01dbce738f6"},"product_name":"Nasco Cassette","brand":"Nasco","price":"GHc5,232"}
+{"_id":{"$oid":"5eb43e32ed4ab01dbce738f7"},"product_name":"Samsung A30","brand":"Samsung","price":"Ghc 4,323"}
+{"_id":{"$oid":"5eb43e68ed4ab01dbce738f8"},"product_name":"Midea Split Inverter","brand":"Midea","price":"GHc 2,232"}
+{"_id":{"$oid":"5eb43ea2ed4ab01dbce738f9"},"product_name":"WhirlPool Split","brand":"Midea","price":"GHc 3,232"}
+{"_id":{"$oid":"5eb43ee3ed4ab01dbce738fa"},"product_name":"Nasco Cassette Ac","brand":"Nasco","price":"Ghc 3,223"}
+{"_id":{"$oid":"5eb43f2bed4ab01dbce738fb"},"product_name":"Samsung A45","brand":"Samsumg","price":"GHC 2,234"}
+{"_id":{"$oid":"5eb43f63ed4ab01dbce738fc"},"product_name":"Nasco Midea","brand":"Nasco","price":"GHc 4,223"}
+{"_id":{"$oid":"5eb43fbced4ab01dbce738fd"},"product_name":"Samsung,A10","brand":"Samsung","price":"GHc 3,453"}
+{"_id":{"$oid":"5eb4401bed4ab01dbce738fe"},"product_name":"WhirlPool Split M","brand":"Midea","price":"GHc 3,232"}
+{"_id":{"$oid":"5eb44055ed4ab01dbce738ff"},"product_name":"Midea Split ","brand":"Midea","price":"GHc 5,323"}
+{"_id":{"$oid":"5eb4408ced4ab01dbce73900"},"product_name":"Samsung B40","brand":"Samsung","price":"GHc 2,323"}
+{"_id":{"$oid":"5eb440d2ed4ab01dbce73901"},"product_name":"Nasco Split Inverter","brand":"Nasco","price":"GHc 3,232"}
+{"_id":{"$oid":"5eb44127ed4ab01dbce73902"},"product_name":"WhirlPool Midea","brand":"Midea","price":"GHc 2,232"}
+{"_id":{"$oid":"5eb4415ded4ab01dbce73903"},"product_name":"Samsung A45","brand":"Samsung","price":"GHC4,322"}
+{"_id":{"$oid":"5eb441c8ed4ab01dbce73904"},"product_name":"Nasco Cassette B30","brand":"Nasco","price":"GHc 3,232"}
+{"_id":{"$oid":"5eb441f1ed4ab01dbce73905"},"product_name":"Samsung A23","brand":"Samsung","price":"GHc 3,434"}
+{"_id":{"$oid":"5eb44237ed4ab01dbce73906"},"product_name":"Nasco Split","brand":"Nasco","price":"GHc 3,232"}
+{"_id":{"$oid":"5eb44265ed4ab01dbce73907"},"product_name":"Samsung 23S","brand":"Samsung","price":"GHc 3,432"}
+{"_id":{"$oid":"5eb4429ced4ab01dbce73908"},"product_name":"Nasco 4F9","brand":"Nasco","price":"GHc 3,322"}
+{"_id":{"$oid":"5eb442d0ed4ab01dbce73909"},"product_name":"WhirlPool Midea S23","brand":"Midea","price":"Ghc 2,232"}
+{"_id":{"$oid":"5eb44304ed4ab01dbce7390a"},"product_name":"Infinix Hot 5","brand":"Infinix","price":"GHc 845"}
+{"_id":{"$oid":"5eb44344ed4ab01dbce7390b"},"product_name":"Galaxy A20","brand":"Nokia","price":"Ghc 450"}
+{"_id":{"$oid":"5eb4436ced4ab01dbce7390c"},"product_name":"Iphone 11 Pro","brand":"APPle","price":"GHc2,344"}
+{"_id":{"$oid":"5eb443abed4ab01dbce7390d"},"product_name":"Infinix Hot 3","brand":"Infinix","price":"GHc 233"}
+{"_id":{"$oid":"5eb443d4ed4ab01dbce7390e"},"product_name":"Nokia 3310","brand":"Nokia","price":"GHc 80"}
+{"_id":{"$oid":"5eb44403ed4ab01dbce7390f"},"product_name":"Techno Spark 4","brand":"Techno","price":"GHc 322"}
+{"_id":{"$oid":"5eb4444aed4ab01dbce73910"},"product_name":"Lenovo AH600","brand":"Lenovo","price":"GHc 556"}
+{"_id":{"$oid":"5eb4447aed4ab01dbce73911"},"product_name":"HP Dual Core","brand":"HP","price":"GHc 1,670"}
+{"_id":{"$oid":"5eb444aded4ab01dbce73912"},"product_name":"HP Intel Core I5","brand":"HP","price":"GHc 2,434"}
+{"_id":{"$oid":"5eb444e0ed4ab01dbce73913"},"product_name":"HP Intel Core I5","brand":"HP","price":"GHc 2,232"}
+{"_id":{"$oid":"5eb44514ed4ab01dbce73914"},"product_name":"Dell Duall Core","brand":"Dell","price":"GHc 4,232"}
+{"_id":{"$oid":"5eb44542ed4ab01dbce73915"},"product_name":"Infinix Hot 4","brand":"Infinix","price":"GHc 232"}
+{"_id":{"$oid":"5eb44572ed4ab01dbce73916"},"product_name":"Macbook Pro","brand":"Apple","price":"GHc 2,232"}
+{"_id":{"$oid":"5eb445a1ed4ab01dbce73917"},"product_name":"Dell Core I3","brand":"Dell","price":"GHc 3,232"}
+{"_id":{"$oid":"5eb445caed4ab01dbce73918"},"product_name":"Techno Spark 3","brand":"Tecno","price":"GHc 534"}
+{"_id":{"$oid":"5eb445fbed4ab01dbce73919"},"product_name":"Infinix A30","brand":"Infinix","price":"GHc 244"}
+{"_id":{"$oid":"5eb44623ed4ab01dbce7391a"},"product_name":"Galaxy A50","brand":"Nokia","price":"Ghc332"}
+{"_id":{"$oid":"5eb4465bed4ab01dbce7391b"},"product_name":"Iphone 6s","brand":"apple","price":"GHc 1,232"}
+{"_id":{"$oid":"5eb44695ed4ab01dbce7391c"},"product_name":"Iphone 9","brand":"apple","price":"Ghc2,232"}
+{"_id":{"$oid":"5eb446baed4ab01dbce7391d"},"product_name":"Galaxy A29","brand":"Nokia","price":"GHc333"}
+{"_id":{"$oid":"5eb446e2ed4ab01dbce7391e"},"product_name":"Dell Intell Cre I5","brand":"Dell","price":"GHc 2,323"}
+{"_id":{"$oid":"5eb4470ced4ab01dbce7391f"},"product_name":"Infinix Hot 3","brand":"Infinix","price":"Ghc 232"}
+{"_id":{"$oid":"5eb44741ed4ab01dbce73920"},"product_name":"Iphone x","brand":"Apple","price":"GHc 2,412"}
+{"_id":{"$oid":"5eb44775ed4ab01dbce73921"},"product_name":"Nokia A30","brand":"Nokia","price":"Ghc 232"}
+{"_id":{"$oid":"5eb447a5ed4ab01dbce73922"},"product_name":"Binatone D30","brand":"Binatone","price":"Ghc 2,322"}
+{"_id":{"$oid":"5eb447d8ed4ab01dbce73923"},"product_name":"Hisense Chest Freezer","brand":"Hisense","price":"GHc 3,123"}
+{"_id":{"$oid":"5eb44803ed4ab01dbce73924"},"product_name":"Iphone 7","brand":"Apple","price":"GHc 2,231"}
+{"_id":{"$oid":"5eb44857ed4ab01dbce73925"},"product_name":"Hisense Double Freezer","brand":"Hisense","price":"GHc 3,232"}
+{"_id":{"$oid":"5eb4488fed4ab01dbce73926"},"product_name":"Galaxy A60","brand":"Nokia","price":"GHc 232"}
+{"_id":{"$oid":"5eb448c5ed4ab01dbce73927"},"product_name":"Iohone 5s","brand":"apple","price":"GHc 645"}

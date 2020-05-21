@@ -28,8 +28,8 @@ class MainHeader extends Component{
                   <nav>
                       
                     <div className="container">
-                    <a href=" " data-target="slide-out" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
-                        <a className="left brand-logo">
+                    <a href="/." data-target="slide-out" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
+                        <a  href= "/." className="left brand-logo">
                             <img className="image" alt="some " src="../../images/Stalwart-logo-1.png"/>                     
                         </a>               
                     <ul id="nav-mobile" className="right hide-on-med-and-down">

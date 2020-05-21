@@ -35,8 +35,8 @@ class Notification extends Component{
                     <div className="header_cont">
                     <h2 className="header">Notifications</h2>
                         <div className="buttons">
-                            <a class="waves-effect waves-light btn ">Send Message</a>
-                            <a class="waves-effect waves-light btn second">Send Email</a>
+                            <a href="/.." class="waves-effect waves-light btn ">Send Message</a>
+                            <a href="/.." class="waves-effect waves-light btn second">Send Email</a>
                         </div>
                     </div>
                     <div className="card-cont" >       

@@ -55,7 +55,7 @@ class Dashboard extends Component{
     render(){
         return(
             <div>
-                {/* <MainHeader/> */}
+                <MainHeader/>
                 <div className="card-cont" > 
                     <div className="row">
                         <div className="col m5">
