@@ -15,9 +15,9 @@ class MainHeader extends Component{
             case null:
                 return;
             case false: 
-            return <li><a href="/auth/google">Login with Google</a></li>;
+            return <div><a href="/auth/google">Login with Google</a></div>;
             default: 
-            return <li><a href="/api/logout"> Logout</a></li>
+            return <div><a href="/api/logout"> Logout</a></div>
         }
     }
     
@@ -46,24 +46,24 @@ class MainHeader extends Component{
                     </div>                
                 </nav>
                     <ul id="slide-out" className="sidenav">
-                        <li>
-                            <a href="/home">
-                                <i className="material-icons">home</i>Home
+                        <li >
+                            <a href="/home" >
+                                <i className="material-icons slide">home</i>Home
                             </a></li>
-                        <li><a href="/notifications">
-                                <i className="material-icons">notifications</i>Notifications
+                        <li ><a href="/notifications" >
+                                <i className="material-icons  slide">notifications</i>Notifications
                             </a></li>
-                        <li><a href="/customers">
-                                <i className="material-icons">person</i>Customers
+                        <li ><a href="/customers" >
+                                <i className="material-icons slide ">person</i>Customers
                             </a></li>
-                        <li><a href="/orders">
-                                 <i className="material-icons">assignment</i>Orders
+                        <li ><a href="/orders" >
+                                 <i className="material-icons slide ">assignment</i>Orders
                             </a></li>
-                        <li><a href="/history">
-                                <i className="material-icons">history</i>History
+                        <li><a href="/history" >
+                                <i className="material-icons slide">history</i>History
                             </a></li>
-                        <li><a href="/api/logout">
-                            <i className="material-icons"> account_circle</i>{this.renderContent()}
+                        <li ><a href="/api/logout" >
+                            <i className="material-icons slide "> account_circle</i>{this.renderContent()}
                          </a></li>
                     </ul>
             </div>

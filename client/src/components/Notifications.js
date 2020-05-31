@@ -34,10 +34,7 @@ class Notification extends Component{
                 <div className="notif_container">
                     <div className="header_cont">
                     <h2 className="header">Notifications</h2>
-                        <div className="buttons">
-                            <a href="/.." class="waves-effect waves-light btn ">Send Message</a>
-                            <a href="/.." class="waves-effect waves-light btn second">Send Email</a>
-                        </div>
+                       
                     </div>
                     <div className="card-cont" >       
                         <div className="row">
@@ -49,7 +46,7 @@ class Notification extends Component{
                                             <span className="total_price">Total price </span>
                                         </h1>
                                         <div className="product_info">
-                                            <span><a className ="product_status" href="/order">{purchase.product_status}</a></span>
+                                            <span><a className ="product_status" href="/orders">{purchase.product_status}</a></span>
                                             <span className="date"> { purchase.date}</span>
                                             <span className="time">{purchase.time}</span>
                                             <span className="price"> {purchase.price}</span> 

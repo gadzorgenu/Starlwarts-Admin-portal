@@ -3,6 +3,7 @@ import {connect } from 'react-redux';
 import './Dashboard.css' ;
 import MainHeader from './MainHeader';
 import TextField from '@material-ui/core/TextField';
+// import EmailButton from './Email';
 
 class Customer_info extends Component{
 
@@ -11,9 +12,13 @@ class Customer_info extends Component{
 
         this.state = {
             customerID: props.match.params ? props.match.params.id : "",
-            customers:[],
-          
+            customers:[]
+            
         };
+	      
+	      
+          
+        
     }
 
     componentDidMount() {
@@ -30,6 +35,7 @@ class Customer_info extends Component{
             },
           )
         }
+    
 
 
     render(){
@@ -99,8 +105,25 @@ class Customer_info extends Component{
                                         readOnly: true,
                                     }}
                                     />
-                        </div>                                           
-                    </div>                    
+                        </div>
+                        <div className="col m5">              
+                                <TextField
+                                    className="firstname"
+                                    id="standard-read-only-input"
+                                    label="Balance "
+                                    defaultValue={customer.balance} 
+                                    InputProps={{
+                                        readOnly: true,
+                                    }}
+                                />
+                        </div>                               
+                    </div>
+                    
+                    <div className="buttons reminder">                         
+                        <button className="btn email-reminder">
+                            Send Email
+                        </button>
+                    </div>                   
                 </div>    
                ))}
            </div>

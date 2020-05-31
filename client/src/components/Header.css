@@ -7,6 +7,29 @@
 .sidenav-trigger{
     color: #000;
 }
+
+.sidenav {
+    background-color: rgb(43, 35, 35) ;
+    
+}
+
+/* .slide{
+    
+} */
+
+.sidenav li a {
+    color:#fff;
+}
+
+
+.sidenav li a i.material-icons {
+    color:#fff;
+}
+
+    
+
+
+
 nav .nav-wrapper{
     width: 100%;
 }
@@ -70,10 +93,11 @@ nav ul a{
     font-size: 23px;
 }
 .card .card-content{
-    padding: 7px;
+    padding-top: 1px;
+    padding: 8px;
 }
 .card-cont{
-    margin-top: 4%;
+    margin-top: 3%;
 }
 .product_name{
     /* margin-right: 7% ; */
@@ -108,7 +132,15 @@ nav ul a{
 }
 .page{
     float: right;
-    margin: 1%;
+    font-size:20px;
+}
+
+.reminder{
+    margin: 4%; 
+}
+
+.email-reminder{
+    margin-left: 5%;
 }
 
 .customer_name_{
@@ -120,9 +152,12 @@ nav ul a{
     margin: 3%;
 }
 
+
+
 .name{
     font-style: italic;
     padding-right: 3%;
+    color: yellowgreen;
 }
 
 .history_cont{
@@ -190,6 +225,7 @@ select{
 
 .pendingOrders{
     padding-left: 5%;
+    color: violet;
 }
 
 .customer_info{
@@ -208,6 +244,7 @@ select{
     margin: 4%;
 
 }
+
 .table{
     max-width: 100%;
 }
