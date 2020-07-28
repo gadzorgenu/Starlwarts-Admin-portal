@@ -62,3 +62,9 @@ Things todo before running the application:
 3. Make sure you have the npm package manager installed and execute `npm install` to execute all required packages
 4. Execture `npm run dev` to execute the application
 5. You can then access the application on [localhost:3000]
+
+## Built with 
+JS with React 
+
+## Authors and Acknowledgment
+All the memeber of Group One(1)
