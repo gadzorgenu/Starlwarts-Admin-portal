@@ -67,4 +67,4 @@ Things todo before running the application:
 JS with React 
 
 ## Authors and Acknowledgment
-All the memeber of Group One(1)
+All the members of Group One(1)
