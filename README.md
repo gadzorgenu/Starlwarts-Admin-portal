@@ -10,7 +10,7 @@ This module is made up of a src directory which contains other subdirectories re
 
 ### Actions
 
-The actions subdirectory contains files with methods that dispatchs an action after a request has been successfully created to the server
+The actions subdirectory contains files with methods that dispatches an action after a request has been successfully created to the server
 
 ### Components
 
@@ -35,7 +35,7 @@ like retrieving customers and orders
 
 ### Config
 
-The configuration sub directory contain various configuration files for the application.It contains application wide configuration such as logging, debugging and reading of configuration parameters from .env file based on application environment. The configuration module (config.js) is ***injected*** into other modules that require it.
+The configuration sub directory contain various configuration files for the application. It contains application wide configuration such as logging, debugging and reading of configuration parameters from .env file based on application environment. The configuration module (config.js) is ***injected*** into other modules that require it.
 
 ### Database
 
@@ -47,7 +47,7 @@ This subdirectory contains files that models the various entities in the applica
 
 ### Routes
 
-All routes to the endpoints are registered here.Reference is made to the various controllers for the registration of the various endpoints
+All routes to the endpoints are registered here. Reference is made to the various controllers for the registration of the various endpoints
 
 
 ## server.js
