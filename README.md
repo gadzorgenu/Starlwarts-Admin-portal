@@ -2,7 +2,7 @@ This project contains both the client and server side of the application
 
 ## Client 
 
-This module is made up of an src directory which contains other subdirectories representing modules of the application. Some of the subdirectories are: 
+This module is made up of a src directory which contains other subdirectories representing modules of the application. Some of the subdirectories are: 
 
 1. actions
 2. components
