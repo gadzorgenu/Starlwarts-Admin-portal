@@ -11,6 +11,7 @@ class MainOperations{
      * Get all orders with customer information
      * @returns Promise
      */
+
     getOrdersWithCustomerInfo()
     {
         //find all purchase records
