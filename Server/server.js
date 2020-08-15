@@ -12,7 +12,6 @@ require('./services/passport');
 const router = express.Router();
 
 
-
 //setting up mongoose
 mongoose.Promise = Promise;
 mongoose.connect( (keys.mongoURI), { useNewUrlParser: true, useUnifiedTopology: true });
